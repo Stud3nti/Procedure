@@ -1,0 +1,38 @@
+Output("1:Area of a rectangle    2:bubble sort")
+choice = input("1:Area of a rectangle    2:bubble sort")
+switch choice
+	case 1:
+		h = input("Enter Height")
+		w = input ("Enter Width")
+		Area = areaOfARectang;e(h,w)
+		print(Area)
+		break
+	case 2
+		i = input("What is the length of the array?")
+		Array intArray[i]
+		for i=0 to intArray.length -1 
+			intArray[i] = input("enter a number")
+		next i
+		Array sorted[i]= bubbleSort(intArray)
+		for j = 0 to sorted.length-1
+			print(sorted[j]+",")
+		next j
+endswitch
+
+procedure Area(w,h)
+	Print(w*h)
+endprocedure
+
+
+function bubbleSort(intArray[])
+	n = intArray.length
+	for i = 0 to n -1
+		for j = 0 to n - i - 1
+		if intArray[j]>intArray[j+1]
+			temp = intArray[j]
+			intArray[j] = intArray[j+1]
+			intArray[j+1] = temp
+		next j
+	next i
+return intArray	
+endfunction
